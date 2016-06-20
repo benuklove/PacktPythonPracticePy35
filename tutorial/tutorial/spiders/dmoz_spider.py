@@ -1,7 +1,9 @@
 """
-Created on 6/18/2016 by Ben
 
-First spider for scrapy tutorial
+  Created on 6/18/2016 by Ben
+
+  First spider for scrapy tutorial
+
 """
 
 import scrapy

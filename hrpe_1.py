@@ -1,9 +1,11 @@
 """
-Created on Tues Jun 14 19:28:31 2016
 
-@author: Ben Love
+  Created on Tues Jun 14 19:28:31 2016
 
-Find sum of multiples of 3 and 5 below n.
+  @author: Ben Love
+
+  Find sum of multiples of 3 and 5 below n.
+
 """
 
 

@@ -1,8 +1,10 @@
 """
-Created on 6/15/2016 by Ben
 
-Sum of even valued Fibonacci terms whose values do not exceed N,
-given T test cases
+  Created on 6/15/2016 by Ben
+
+  Sum of even valued Fibonacci terms whose values do not exceed N,
+  given T test cases
+
 """
 
 

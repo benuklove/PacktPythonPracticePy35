@@ -1,25 +1,35 @@
-# -*- coding: utf-8 -*-
-from selenium import selenium
-import unittest, time, re
+import itertools
+
+kitty_list = []
+katty_list = []
 
 
-class Loves(unittest.TestCase):
-    def setUp(self):
-        self.verificationErrors = []
-        self.selenium = selenium("localhost", 4444, "*chrome", "https://www.loves.com/")
-        self.selenium.start()
+for i in range(-7, 40):
+    if i % 3 == 1:
+        kitty_list.append(i)
+    if i % 3 == 2:
+        katty_list.append(i)
 
-    def test_loves(self):
-        sel = self.selenium
-        sel.open("/en/location-and-fuel-price-search/locationsearchresults#?state=All")
-        sel.click("//div[@id='welcomePopup']/ul/li[2]/a/div")
-        sel.click("link=Export")
-        sel.wait_for_page_to_load("30000")
-
-    def tearDown(self):
-        self.selenium.stop()
-        self.assertEqual([], self.verificationErrors)
+print(kitty_list)
+print(katty_list)
 
 
-if __name__ == "__main__":
-    unittest.main()
+blocks = list(range(1, 4))
+print(blocks)
+perms = list(itertools.permutations(blocks, 2))
+print(perms)
+
+print(type(perms[0][1]))
+count = 0
+for item in perms:
+    for term in item:
+        if term == 1:
+            count += 1
+print(count)
+
+
+# def some_func(block_list):
+#     temp_blocks = block_list.copy()
+#     for item in temp_blocks:
+#         a = item
+#         temp_blocks.remove(item)
